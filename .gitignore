@@ -1,0 +1,40 @@
+# 🔥 Node (Frontend + Backend)
+node_modules/
+
+# 🔥 Environment variables
+.env
+
+# 🔥 Logs
+*.log
+log.txt
+
+# 🔥 Python cache
+__pycache__/
+*.pyc
+
+# 🔥 ML model & dataset
+model.pkl
+KDDTrain+.txt
+
+# 🔥 Build files
+dist/
+build/
+
+# 🔥 Vite cache
+.vite/
+
+# 🔥 OS files
+.DS_Store
+Thumbs.db
+
+# 🔥 IDE files
+.vscode/
+.idea/
+
+# 🔥 Database / temp
+data/
+*.db
+
+# 🔥 Misc temp
+*.tmp
+*.temp
