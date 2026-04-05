@@ -46,30 +46,7 @@ AI / Networking:
 - Scapy
 - Scikit-learn
 
----
 
-## 📂 Project Structure
-
-Net_ml/
-│
-├── Backend/
-│   ├── server.js
-│   ├── db/
-│   │   ├── connection.js
-│   │   └── schema.js
-│
-├── Frontend/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   └── App.css
-│
-├── ids.py
-├── model.pkl        (ignored)
-├── log.txt          (ignored)
-├── .gitignore
-├── README.md
-
----
 
 ## ⚙️ How It Works
 
