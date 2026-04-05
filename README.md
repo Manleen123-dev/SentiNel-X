@@ -1,116 +1,178 @@
 # 🛡 SentinelX — AI-Powered Intrusion Detection System
 
-> ⚡ A real-time cybersecurity system that captures live network traffic, detects intrusions using Machine Learning, and visualizes everything in a modern cyber-style dashboard.
+⚡ A real-time cybersecurity system that captures live network traffic, detects intrusions using Machine Learning, and visualizes everything through a modern cyber-style dashboard.
 
 ---
 
 ## 🌟 Overview
 
-SentinelX is a full-stack, real-time Intrusion Detection System (IDS) built to monitor network traffic and identify malicious activity.
+SentinelX is a full-stack Intrusion Detection System (IDS) designed to monitor network traffic in real-time and detect malicious activities.
 
-It combines:
-- 🔍 **Live packet sniffing (Scapy)**
-- 🤖 **Machine Learning-based classification**
-- ⚡ **Real-time backend processing**
-- 📊 **Interactive React dashboard**
+It integrates:
+- Live packet capture using Scapy
+- Machine Learning-based classification
+- Node.js backend for processing
+- React dashboard for visualization
 
 ---
 
-## 🚀 Key Features
+## 🚀 Features
 
-### 🔐 Security & Detection
-- Real-time packet capture
-- ML-based anomaly detection
-- SYN flood attack detection
-- Suspicious traffic classification
-
-### 📊 Dashboard & Visualization
-- Live updating metrics
-- 📈 Threat trend (animated line chart)
-- 🥧 Traffic distribution (donut chart)
-- 🔥 Top attacker detection
-- ⚡ Activity feed (live logs)
-
-### 🎯 Smart UI
-- Cyber-themed UI design
-- Glow effects & animations
-- Hover interactions
-- Dynamic alerts (safe vs threat)
-
-### 🧠 Intelligence Layer
-- Feature extraction from packets
-- ML model prediction (normal vs suspicious)
-- IP-based attack tracking
+- 🔍 Real-time packet capture
+- 🤖 Machine Learning-based threat detection
+- 🚨 Suspicious activity alerts
+- 📈 Live threat trend visualization
+- 🥧 Traffic distribution (Safe vs Threats)
+- 🔥 Top attacker identification
+- ⚡ Live activity feed with filtering
+- 🎨 Cyber-style modern UI
 
 ---
 
 ## 🏗️ Tech Stack
 
-### 💻 Frontend
+Frontend:
 - React.js
 - Chart.js
-- Custom CSS (Cyber UI)
+- CSS (Cyber UI Design)
 
-### ⚙️ Backend
+Backend:
 - Node.js
 - Express.js
 - MongoDB (Mongoose)
 
-### 🧠 AI / Networking
+AI / Networking:
 - Python
-- Scapy (packet sniffing)
-- Scikit-learn (ML model)
+- Scapy
+- Scikit-learn
 
 ---
 
+## 📂 Project Structure
+
+Net_ml/
+│
+├── Backend/
+│   ├── server.js
+│   ├── db/
+│   │   ├── connection.js
+│   │   └── schema.js
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   └── App.css
+│
+├── ids.py
+├── model.pkl        (ignored)
+├── log.txt          (ignored)
+├── .gitignore
+├── README.md
 
 ---
 
-## ⚙️ System Workflow
+## ⚙️ How It Works
 
-### 1️⃣ Packet Capture
-- Scapy captures live network packets
+1. Packet Capture  
+   Scapy captures live network packets.
 
-### 2️⃣ Feature Extraction
-- Extracts:
-  - Protocol
-  - Packet length
-  - Flags
-  - Other metadata
+2. Feature Extraction  
+   Extracts protocol, packet size, and other metadata.
 
-### 3️⃣ ML Prediction
-- Model classifies:
-  - ✅ Normal Traffic
-  - 🚨 Suspicious Activity
+3. ML Prediction  
+   Classifies traffic as:
+   - Normal
+   - Suspicious
 
-### 4️⃣ Attack Detection Logic
-- Detects SYN flood attacks
-- Tracks high-frequency IPs
+4. Attack Detection  
+   Detects patterns like SYN flood attacks.
 
-### 5️⃣ Backend Processing
-- Sends data to Node.js API
-- Stores packets in MongoDB
+5. Backend Processing  
+   Sends packet data to Node.js server and stores in MongoDB.
 
-### 6️⃣ Frontend Visualization
-- React fetches data every 2 seconds
-- Updates:
-  - Stats
-  - Charts
-  - Logs
+6. Frontend Visualization  
+   React dashboard fetches and displays real-time insights.
 
 ---
 
 ## 🖥️ Setup Instructions
 
----
-
-### 🔹 1. Clone Repository
-
-```bash
+### 1. Clone Repository
 git clone https://github.com/Manleen123-dev/Sentinel-X.git
 cd Sentinel-X
 
-### Backend Setup
+---
+
+### 2. Backend Setup
 cd Backend
 npm install
 node server.js
+
+Runs on: http://localhost:3000
+
+---
+
+### 3. Frontend Setup
+cd Frontend
+npm install
+npm run dev
+
+Runs on: http://localhost:5173
+
+---
+
+### 4. Python IDS
+pip install scapy requests
+python ids.py
+
+Note: Run as administrator for packet sniffing.
+
+---
+
+## 📊 Dashboard
+
+The dashboard provides:
+- Real-time threat monitoring
+- Interactive charts
+- Traffic distribution
+- Live logs and filtering
+
+---
+
+## ⚠️ Notes
+
+- model.pkl and log.txt are ignored using .gitignore
+- node_modules is not included in repository
+- Designed for local real-time monitoring
+
+---
+
+## 🚀 Future Improvements
+
+- WebSocket-based real-time updates
+- Geo-location tracking of attackers
+- Sound alerts for threats
+- Cloud deployment (AWS / Docker)
+
+---
+
+## 🎯 Learning Outcomes
+
+- Real-time system design
+- Full-stack development
+- Machine Learning integration
+- Network packet analysis
+- Data visualization
+
+---
+
+## 👤 Author
+
+Manleen Kaur
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐ on GitHub.
+
