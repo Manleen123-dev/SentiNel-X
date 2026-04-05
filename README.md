@@ -63,4 +63,54 @@ It combines:
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## ⚙️ System Workflow
+
+### 1️⃣ Packet Capture
+- Scapy captures live network packets
+
+### 2️⃣ Feature Extraction
+- Extracts:
+  - Protocol
+  - Packet length
+  - Flags
+  - Other metadata
+
+### 3️⃣ ML Prediction
+- Model classifies:
+  - ✅ Normal Traffic
+  - 🚨 Suspicious Activity
+
+### 4️⃣ Attack Detection Logic
+- Detects SYN flood attacks
+- Tracks high-frequency IPs
+
+### 5️⃣ Backend Processing
+- Sends data to Node.js API
+- Stores packets in MongoDB
+
+### 6️⃣ Frontend Visualization
+- React fetches data every 2 seconds
+- Updates:
+  - Stats
+  - Charts
+  - Logs
+
+---
+
+## 🖥️ Setup Instructions
+
+---
+
+### 🔹 1. Clone Repository
+
+```bash
+git clone https://github.com/Manleen123-dev/Sentinel-X.git
+cd Sentinel-X
+
+### Backend Setup
+cd Backend
+npm install
+node server.js
